@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Account Deletion Request - Vouchy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .card {
+            border: 1px solid #e1e4e8;
+            padding: 25px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #bd2130;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #6a737d;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<a href="index.html">&larr; Privacy Policy</a>
+    <div class="card">
+        <h1>Account Deletion Request</h1>
+        <p>To delete your account and all associated data for the <strong>Vouchy</strong> mobile application, please
+            complete the form below.</p>
+
+        <div class="warning">
+            <strong>Warning:</strong> Deleting your account is permanent. All your saved preferences, profile details,
+            and cloud-stored data inside our database will be completely and irrevocably purged. This action cannot be
+            undone.
+        </div>
+
+        <!-- Note: You can route this form to send you an email via Formspree, Formspark, or your custom API -->
+        <form action="https://submit-form.com/mGVnYlU6W" method="POST">
+            <label for="email"><strong>Your Registered App Email Address:</strong></label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <input type="hidden" name="_subject" value="Account Deletion Request - Vouchy">
+            <button type="submit">Permanently Delete My Account & Data</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        Managed by NanoLab<br>
+        Business ID (Y-tunnus): 3627021-3<br>
+        Data removal requests are processed within 7 business days under GDPR compliance.
+    </div>
+
+</body>
+
+</html>
