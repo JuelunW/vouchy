@@ -1,0 +1,2 @@
+# vouchy
+privacy-policy
