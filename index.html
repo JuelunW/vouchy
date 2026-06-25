@@ -4,273 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - NanoLab</title>
-    <style>
-        :root {
-            --primary: #0f172a;
-            --secondary: #475569;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --background: #f8fafc;
-            --surface: #ffffff;
-            --border: #e2e8f0;
-            --text: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--background);
-            color: var(--text);
-            line-height: 1.7;
-            padding: 2rem 1rem;
-        }
-
-        .policy-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--surface);
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-        }
-
-        h1 {
-            color: var(--primary);
-            font-size: 2.25rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 1rem;
-        }
-
-        h2 {
-            color: var(--primary);
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        h3 {
-            color: var(--secondary);
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            margin-bottom: 1.25rem;
-        }
-
-        /* Identity card block */
-        .identity-box {
-            background-color: var(--background);
-            border-left: 4px solid var(--accent);
-            padding: 1.25rem;
-            border-radius: 0 8px 8px 0;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        /* Lists formatting */
-        ul, ol {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Responsive Table styling */
-        .table-container {
-            overflow-x: auto;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.95rem;
-        }
-
-        th {
-            background-color: #f1f5f9;
-            color: var(--primary);
-            font-weight: 600;
-            padding: 0.75rem 1rem;
-            border-bottom: 2px solid var(--border);
-        }
-
-        td {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--border);
-            color: var(--text);
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* Links */
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        @media (max-width: 640px) {
-            body {
-                padding: 1rem 0.5rem;
-            }
-            .policy-container {
-                padding: 1.5rem;
-                border-radius: 8px;
-            }
-            h1 {
-                font-size: 1.75rem;
-            }
-            h2 {
-                font-size: 1.3rem;
+    <title>Vouchy | Smart Discount Optimizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5', /* Indigo 600 */
+                        secondary: '#10B981', /* Emerald 500 */
+                        surface: '#ffffff',
+                        background: '#F9FAFB'
+                    }
+                }
             }
         }
-    </style>
+    </script>
 </head>
 
-<body>
-    <a href="deletion.html">&larr; Account Deletion Request</a>
-    <main class="policy-container">
-        <h1>Privacy Policy</h1>
-        
-        <h2>1. Data Controller Identity & Contact</h2>
-        <div class="identity-box">
-            <strong>Data Controller:</strong> NanoLab<br>
-            <strong>Business ID (Y-tunnus):</strong> 3627021-3<br>
-            <strong>Location:</strong> Helsinki, Finland
+<body class="bg-background text-gray-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-surface shadow-sm fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="bg-primary/10 p-0.5 rounded-xl">
+                        <img style="width: 48px; height: 48px; border-radius: 8px;" src="icon.png"
+                            alt="Vouchy app icon">
+                    </div>
+                    <span class="font-black text-2xl text-gray-900 tracking-tight">Vouchy</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16">
+
+        <!-- Left Column: Text & Buttons -->
+        <div class="md:w-1/2 flex flex-col gap-5 text-center md:text-left items-center md:items-start">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
+                Maximize your savings, <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">magically.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-500 leading-relaxed max-w-xl">
+                Add your vouchers, enter your total bill, and let the Genie magically optimize your discounts to find
+                you the absolute best deal.
+            </p>
+            <div id="download" class="flex flex-col sm:flex-row gap-4 mt-2 justify-center md:justify-start w-full">
+                <!--
+                <a href="#"
+                    class="flex items-center justify-center gap-3 bg-gray-900 text-white px-6 py-3 rounded-2xl hover:bg-gray-800 transition">
+                    <i class="fa-brands fa-apple text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-[10px] leading-tight text-gray-300">Download on the</div>
+                        <div class="text-base font-bold leading-tight">App Store</div>
+                    </div>
+                </a>
+                -->
+                <a href="https://play.google.com/store/apps/details?id=fi.nanolab.vouchy"
+                    class="flex items-center justify-center gap-3 bg-gray-900 text-white px-6 py-3 rounded-2xl hover:bg-gray-800 transition">
+                    <i class="fa-brands fa-google-play text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-[10px] leading-tight text-gray-300">GET IT ON</div>
+                        <div class="text-base font-bold leading-tight">Google Play</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2>2. Types of Data Collected</h2>
-        <p>
-            The Application is built to minimize data collection. Depending on how you interact with the Application, the
-            following categories of data may be processed:
-        </p>
-        
-        <h3>A. Automatically Collected Technical Data</h3>
-        <p>
-            When you run the Application, certain technical data is automatically sent by your mobile device to support
-            app functionality and performance:
-        </p>
-        <ul>
-            <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers, and language
-                settings.
-            </li>
-            <li><strong>Usage Data:</strong> Diagnostic metrics, crash logs, app launch times, and performance analytics.</li>
-        </ul>
+        <!-- Right Column: App Mockup -->
+        <div class="md:w-1/2 flex justify-center w-full mt-10 md:mt-0 relative">
+            <div
+                class="max-w-[320px] relative bg-surface border-4 border-gray-100 rounded-[2.5rem] shadow-2xl overflow-hidden relative z-10 aspect-[9/20] flex flex-col items-center justify-center text-gray-400">
+                <img class="fa-solid fa-mobile-screen-button text-5xl mb-3" src="screenshot_1.png" alt="app screenshot">
+            </div>
 
-        <h3>B. Data You Provide Directly</h3>
-        <p>
-            When you create an account in the Application, we collect your email address and a secure hash of your password.
-            Upon registration, a unique system-generated identifier (User ID) is assigned to your profile to sync your data
-            across devices.
-        </p>
-
-        <h2>3. Purpose and Legal Basis for Processing</h2>
-        <p>We process your data under the following legal bases allowed under GDPR:</p>
-        <ol>
-            <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> To monitor software stability, optimize performance, debug runtime
-                errors, and safeguard the underlying application infrastructure.
-            </li>
-            <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> For any optional analytical tracking or marketing data collected, where
-                requested explicitly via native device permission prompts.
-            </li>
-        </ol>
-
-        <h2>4. Third-Party Service Providers</h2>
-        <p>To keep the Application running smoothly, we utilize trusted third-party infrastructure components. These
-            processors handle technical telemetry data externally on our behalf:
-        </p>
-        
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Provider</th>
-                        <th>Purpose</th>
-                        <th>Data Location &amp; Safeguards</th>
-                        <th>Link to Privacy Policy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Google Play Services</strong></td>
-                        <td>Licensing &amp; app engine</td>
-                        <td>Global</td>
-                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Supabase, Inc.</strong></td>
-                        <td>Auth &amp; Database Infrastructure</td>
-                        <td>EU (Frankfurt, Germany)</td>
-                        <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy</a></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
 
-        <h2>5. Data Retention Period</h2>
-        <ul>
-            <li><strong>Technical Logs &amp; Metrics:</strong> Automatically collected technical logs and crash reports are anonymized or
-                completely deleted automatically within 90 days of collection.
-            </li>
-            <li><strong>Support Emails:</strong> Correspondence history sent to our support inbox is preserved for up to 1 year to assist
-                with recurring technical inquiries, after which it is purged.
-            </li>
-        </ul>
+    </section>
 
-        <h2>6. International Data Transfers</h2>
-        <p>The third-party systems we use (such as Google Infrastructure) may store and process data on server installations
-            located outside of the European Economic Area (EEA), primarily in the United States. Any such transfers are
-            executed securely under the protection of the EU-U.S. Data Privacy Framework or standard contractual clauses
-            approved by the European Commission.
-        </p>
+    <!-- Features Section -->
+    <section class="bg-surface py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-gray-900 mb-4">Everything you need to shop smarter</h2>
+                <p class="text-gray-500 text-lg">Stop doing the math at the checkout counter. Securely sync your data to
+                    the cloud so your wallet is always safe.</p>
+            </div>
 
-        <h2>7. Your GDPR Rights</h2>
-        <p>As a resident of the European Union, you possess comprehensive rights regarding your personal data:</p>
-        <ul>
-            <li><strong>Right of Access:</strong> You can request a summary or copy of any personal records we hold about you.</li>
-            <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can ask us to purge your interaction history or support
-                messages.
-            </li>
-            <li><strong>Right to Rectification:</strong> You can request updates to inaccurate or outdated records.</li>
-            <li><strong>Right to Complain:</strong> If you believe your data is handled improperly, you have the statutory right to file an
-                official complaint with the Finnish Data Protection Ombudsman (Tietosuojavaltuutettu) via <a href="https://tietosuoja.fi" target="_blank" rel="noopener">tietosuoja.fi</a>.
-            </li>
-        </ul>
-        <p>To execute any of these rights, contact us directly at the email listed in Section 1.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-background p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="bg-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Smart Deal Optimizer</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Input your bill amount and select a merchant. Our algorithm calculates the perfect portfolio of
+                        stackable fixed and percentage-based vouchers to minimize your final price.
+                    </p>
+                </div>
 
-        <h2>8. Changes to This Policy</h2>
-        <p>We reserve the right to revise this Privacy Policy periodically to reflect shifts in regulatory mandates or
-            functional application expansions. Updates take effect immediately upon the revised document being published
-            online.
-        </p>
-    </main>
+                <!-- Feature 2 -->
+                <div
+                    class="bg-background p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="bg-secondary/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-wallet text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Digital Voucher Wallet</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Store all your codes in one place. Easily track minimum spending requirements, active dates, and
+                        whether a voucher can be combined with others.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="bg-background p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="bg-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-receipt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Detailed Receipt History</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Review past transactions grouped by merchant. Instantly check your original bill, the applied
+                        vouchers, the final paid amount, and your lifetime savings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Stats -->
+    <section class="py-20 bg-primary text-white text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black mb-8">Take control of your savings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/20">
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl font-black mb-2">100%</div>
+                    <div class="text-primary-100 font-medium tracking-wide text-sm uppercase">Cloud Synced
+                    </div>
+                </div>
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl font-black mb-2"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="text-primary-100 font-medium tracking-wide text-sm uppercase">Instant Calculation</div>
+                </div>
+                <div class="pt-6 md:pt-0">
+                    <div class="text-5xl font-black mb-2"><i class="fa-solid fa-shield-halved">👤</i></div>
+                    <div class="text-primary-100 font-medium tracking-wide text-sm uppercase">Secure Auth</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-black text-xl text-white tracking-tight">Vouchy</span>
+            </div>
+            <p class="text-sm">© 2026 Vouchy App. All rights reserved.</p>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
